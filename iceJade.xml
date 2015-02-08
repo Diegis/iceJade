@@ -2,22 +2,22 @@
   <block type="comment_comment" id="1" x="105" y="162">
     <field name="TEXT">Icewire class</field>
     <next>
-      <block type="controls_repeat" id="132" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="139">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="109">
+      <block type="movement_forward" id="109">
+        <next>
+          <block type="robot_delay" id="150" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="151">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="150" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="151">
-                    <field name="NUM">5000</field>
+              <block type="controls_repeat" id="132" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="139">
+                    <field name="NUM">1</field>
                   </block>
                 </value>
-                <next>
+                <statement name="DO">
                   <block type="oled_cleardisplay" id="2">
                     <next>
                       <block type="oled_drawtext" id="3">
@@ -48,13 +48,13 @@
                       </block>
                     </next>
                   </block>
+                </statement>
+                <next>
+                  <block type="movement_stop" id="149"></block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
-        <next>
-          <block type="movement_stop" id="149"></block>
         </next>
       </block>
     </next>
