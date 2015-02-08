@@ -3,7 +3,7 @@
     <field name="TEXT">Icewire class</field>
     <next>
       <block type="controls_whileUntil" id="32" inline="false">
-        <field name="MODE">UNTIL</field>
+        <field name="MODE">WHILE</field>
         <statement name="DO">
           <block type="oled_cleardisplay" id="2">
             <next>
