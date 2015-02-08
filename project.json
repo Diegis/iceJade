@@ -1,0 +1,10 @@
+{
+    "name": "iceJade",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "iceJade.xml",
+    "author": "Diegis",
+    "minimum_firmware_version": 42
+}
