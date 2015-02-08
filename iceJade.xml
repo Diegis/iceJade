@@ -4,12 +4,7 @@
     <next>
       <block type="movement_forward" id="109">
         <next>
-          <block type="robot_delay" id="150" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="151">
-                <field name="NUM">5000</field>
-              </block>
-            </value>
+          <block type="movement_stop" id="152">
             <next>
               <block type="controls_repeat" id="132" inline="true">
                 <value name="TIMES">
