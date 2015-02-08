@@ -1,9 +1,13 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="comment_comment" id="1" x="-87" y="159">
+  <block type="comment_comment" id="1" x="105" y="162">
     <field name="TEXT">Icewire class</field>
     <next>
-      <block type="controls_whileUntil" id="32" inline="false">
-        <field name="MODE">WHILE</field>
+      <block type="controls_repeat" id="132" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="139">
+            <field name="NUM">8</field>
+          </block>
+        </value>
         <statement name="DO">
           <block type="movement_forward" id="109">
             <next>
